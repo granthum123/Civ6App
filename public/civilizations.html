@@ -1,0 +1,20 @@
+<div class="container" ng-controller="AppCtrl">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Civilization</th>
+				<th>Unique Ability</th>
+				<th>Unique Unit (1)</th>
+				<th>Unique Unit (2)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="civ in civs">
+                <td>{{civ.name}}</td> 
+                <td>{{civ.ability}}</td>
+                <td>{{civ.unit1}}</td>
+				<td>{{civ.unit2}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

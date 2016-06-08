@@ -13,39 +13,21 @@
 	<nav class="navbar navbar-default">
 		<div class = "container-fluid">
 			<div class="navbar-header">
-				<a href = "#" class = "navbar-brand">CIV6INFO</a>
+				<a href = "#/" class = "navbar-brand">CIV6INFO</a>
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
-					<li class = "active"><a href = "#">Civilizations</a></li>
+					<li class = "active"><a href = "#/Civilizations">Civilizations</a></li>
 					<li><a href = "#/Tiles">Tiles</a></li>
 					<li><a href = "#/Strategy">Strategy</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="container" ng-controller="AppCtrl">
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Civilization</th>
-					<th>Unique Ability</th>
-					<th>Unique Unit (1)</th>
-					<th>Unique Unit (2)</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="civ in civs">
-                    <td>{{civ.name}}</td>
-                    <td>{{civ.ability}}</td>
-                    <td>{{civ.unit1}}</td>
-					<td>{{civ.unit2}}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<ng-view></ng-view>
+	</body>
+	<script src="angular/angular.js"></script>
+	<script src="angular-route/angular-route.js"></script>
 	<script src="controllers/controller.js"></script>
 </body>
 </html>
